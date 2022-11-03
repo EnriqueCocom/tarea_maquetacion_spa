@@ -106,7 +106,7 @@ header {
 
 /*Código de contenedor Slide*/
 .contenedor_slide {
-  background-image: url(/imagenes/slide1.jpg);
+  background-image: url(../imagenes/slide1.jpg);
   background-repeat: no-repeat;
   background-size: cover; /*llenar el contenedor*/
   height: 500px;
