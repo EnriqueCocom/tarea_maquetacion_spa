@@ -1,0 +1,337 @@
+/*
+  Autor: Enrique Cocom Canul
+  Materia: Desarrollo de Frontend
+  Grupo: 9ST
+  Fecha: 2/11/2022
+ */
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;600;700&display=swap");
+
+/*Variable de colores*/
+:root {
+  --blanco: #ffffff;
+  --negro: #000000;
+  --rosado: #f20574;
+  --beige: #fff9f1;
+  --margen_izquierdo: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+  background-color: var(--blanco);
+}
+
+.ancho {
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  /* border: 1px red solid; */
+}
+
+/* Código header */
+header {
+  background-color: var(--beige);
+  border-top: 15px var(--rosado) solid;
+  padding-bottom: 20px;
+}
+
+/* Código de contenedor cabecera*/
+.contenedor_cabecera {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Codigo de contenedor figure */
+.contenedor_cabecera figure {
+  width: 200px;
+  /* border: 1px green solid; */
+}
+.contenedor_cabecera figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Código de iconomenu bars */
+.contenedor_iconomenu {
+  text-align: center;
+  display: none;
+}
+#iconomenu {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--rosado);
+  color: var(--blanco);
+  font-size: 16px;
+}
+
+/* Código de contenedor de iconos*/
+.contenedor_iconos a {
+  display: inline-block;
+  margin: 20px;
+}
+.contenedor_iconos a i {
+  color: var(--negro);
+  font-size: 50px;
+}
+.contenedor_iconos a i:hover {
+  color: var(--rosado);
+}
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px;
+  border: 2px var(--negro) solid;
+}
+.menu li a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--negro);
+  font-weight: bold;
+}
+.menu li a:hover {
+  color: var(--rosado);
+}
+
+/*Código de contenedor Slide*/
+.contenedor_slide {
+  background-image: url(/imagenes/slide1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; /*llenar el contenedor*/
+  height: 500px;
+  background-position: 0px, 1000px;
+}
+.informacion_slide {
+  color: var(--blanco);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+/* Código Botones*/
+.btn_rosado {
+  background-color: var(--rosado);
+  text-decoration: none;
+  font-family: "Zilla Slab", serif;
+  color: var(--blanco);
+  padding: 15px 30px;
+  border-radius: 3px;
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+.btn_rosado:hover {
+  background-color: var(--blanco);
+}
+.btn_borde {
+  border: 2px var(--rosado) solid;
+  text-decoration: none;
+  font-family: "Zilla Slab", serif;
+  color: var(--blanco);
+  padding: 15px 30px;
+  border-radius: 3px;
+  margin-left: 10px;
+  display: inline-block;
+}
+/* Código de contenedor productos */
+.contenedor_productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  /* border: 1px blue solid; */
+}
+.contenedor_productos article {
+  max-width: 550px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.caja_imagen img {
+  border: 10px green solid;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0px 0px 10px #ccc;
+  filter: opacity(25%);
+  transition: all 1s ease;
+}
+.caja_imagen:hover img {
+  filter: opacity(100%);
+}
+h3 {
+  text-align: center;
+}
+/*Código contenedor empleos*/
+.contenedor_empleos {
+  padding: 5px;
+  background-color: var(--beige);
+}
+.caja_buscamos {
+  display: flex;
+  justify-content: space-between;
+}
+.caja_buscamos figure img {
+  width: 450px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  filter: sepia(100%);
+  transition: all 0.5s ease;
+}
+.caja_buscamos figure img:hover {
+  filter: sepia(30%);
+}
+.caja_trabajo {
+  max-width: 700px;
+}
+
+/*Código caja talento*/
+.caja_talento {
+  background-color: beige;
+}
+.caja_talento h2 {
+  text-align: center;
+  padding-top: 30px;
+}
+.contenedor_servicios {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+}
+.contenedor_servicios article {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: rgb(247, 227, 175);
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.contenedor_servicios figure img {
+  width: 100%;
+  height: 100%;
+  border: 10px white solid;
+  border-radius: 50%;
+}
+.contenedor_servicios article figure img {
+  transform: scale(1);
+  transition: all 0.5s ease;
+}
+.contenedor_servicios article figure img:hover {
+  transform: scale(1.1);
+}
+
+/*Codigo de los Botones*/
+.btn_rosado {
+  border: 2px #f20574 solid;
+  background-color: #f20574;
+  text-decoration: none;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 3px;
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+.btn_rosado:hover {
+  background-color: #333;
+}
+.btn_borde {
+  border: 2px #f20574 solid;
+  text-decoration: none;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+/* Galeria de fotos */
+.titulo_instalaciones {
+  text-align: center;
+}
+.instalaciones {
+  display: grid;
+  grid-template-areas: "foto5 foto2 foto1 foto1" "foto4 foto3 foto1 foto1";
+}
+.instalaciones figure {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+.instalaciones figure a {
+  display: inline-block;
+  transition: all 0.5s ease;
+  height: 100%;
+}
+.instalaciones figure a:hover {
+  transform: scale(1.1);
+  filter: brightness(0.5);
+}
+.instalaciones figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.foto1 {
+  grid-area: foto1;
+}
+.foto2 {
+  grid-area: foto2;
+}
+.foto3 {
+  grid-area: foto3;
+}
+.foto4 {
+  grid-area: foto4;
+}
+.foto5 {
+  grid-area: foto5;
+}
+.ir_arriba {
+  position: fixed;
+  z-index: 10;
+  right: 20px;
+  bottom: 20px;
+  font-size: 40px;
+  filter: drop-shadow(0px 0px 5px #999);
+  color: var(--rosado);
+  cursor: pointer;
+}
+
+footer {
+  border-bottom: 15px var(--rosado) solid;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer a {
+  color: var(--rosado);
+  text-decoration: none;
+  padding-bottom: 10px;
+  font-size: 18px;
+  transition: all 0.5s ease;
+}
+footer a:hover {
+  color: var(--negro);
+}
