@@ -60,6 +60,13 @@
   .contenedor_iconomenu{
     display:block;
   }
+  .caja_cabecera{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px blue solid;
+  }
   .menu li{
     border-bottom: 2px #333 dotted;
     width: 100%;
